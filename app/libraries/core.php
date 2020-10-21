@@ -1,0 +1,1 @@
+// sort of a web.php from Laravel
