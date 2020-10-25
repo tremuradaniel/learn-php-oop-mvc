@@ -16,7 +16,7 @@
                                 <?php echo (!empty($data['name_err'])) 
                                     ? 'is-invalid' : '' ?>
                             "
-                            value="<?php $data['name'] ?>""
+                            value="<?php echo $data['name']; ?>""
                         >
                         <span class="invalid-feedback">
                             <?php echo $data['name_err']; ?>
@@ -30,7 +30,7 @@
                                 <?php echo (!empty($data['email_err'])) 
                                     ? 'is-invalid' : '' ?>
                             "
-                            value="<?php $data['email'] ?>""
+                            value="<?php echo $data['email']; ?>""
                         >
                         <span class="invalid-feedback">
                             <?php echo $data['email_err']; ?>
@@ -44,7 +44,7 @@
                                 <?php echo (!empty($data['password_err'])) 
                                     ? 'is-invalid' : '' ?>
                             "
-                            value="<?php $data['password'] ?>""
+                            value="<?php echo $data['password']; ?>""
                         >
                         <span class="invalid-feedback">
                             <?php echo $data['password_err']; ?>
@@ -61,10 +61,10 @@
                                     ? 'is-invalid' : '' 
                                 ?>
                             "
-                            value="<?php $data['confirm_password'] ?>""
+                            value="<?php echo $data['confirm_password']; ?>""
                         >
                         <span class="invalid-feedback">
-                            <?php echo $data['password_err']; ?>
+                            <?php echo $data['confirm_password_err']; ?>
                         </span>
                     </div>
                     <div class="row">

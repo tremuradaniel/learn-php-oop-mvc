@@ -15,7 +15,7 @@
                                 <?php echo (!empty($data['email_err'])) 
                                     ? 'is-invalid' : '' ?>
                             "
-                            value="<?php $data['email'] ?>""
+                            value="<?php echo $data['email'] ?>""
                         >
                         <span class="invalid-feedback">
                             <?php echo $data['email_err']; ?>
@@ -29,7 +29,7 @@
                                 <?php echo (!empty($data['password_err'])) 
                                     ? 'is-invalid' : '' ?>
                             "
-                            value="<?php $data['password'] ?>""
+                            value="<?php echo $data['password'] ?>""
                         >
                         <span class="invalid-feedback">
                             <?php echo $data['password_err']; ?>
