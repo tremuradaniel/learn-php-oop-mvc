@@ -61,6 +61,8 @@
                          PASSWORD_DEFAULT);
                     // Regiester User
                     if ($this->userModel->register($data)) {
+                        flash('register_success',
+                             'You are registered and can log in');
                         redirect('users/login');
                     } else {
                         die('SOMETHING WENT WRONG');
