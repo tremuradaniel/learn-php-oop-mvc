@@ -8,11 +8,8 @@
         {
 
             $data = [
-                'title' => 'Welcome!',
-                'posts' => $posts
+                'title' => 'Welcome!'
             ];
-
-            $posts = $this->postModel->getPosts();
 
             $this->view('pages/index',  $data);
         }
