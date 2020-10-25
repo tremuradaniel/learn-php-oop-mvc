@@ -7,9 +7,16 @@
 
         public function index()
         {
+
+            $posts = $this->postModel->getPosts();
+
             $data = [
-                'title' => 'Welcome!'
+                'title' => 'Welcome!',
+                'posts' => $posts
             ];
+
+            $posts = $this->postModel->getPosts();
+
             $this->view('pages/index',  $data);
         }
 
