@@ -5,7 +5,7 @@
 /*
 * App Core Class 
 * Creates URL & loads core controller 
-* URL FOMRAT - /controller/methods/params
+* URL FOMRAT - /controller/methods/params 
 */
 
 class Core {

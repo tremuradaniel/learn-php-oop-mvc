@@ -31,4 +31,8 @@
                 echo $this->error;
             }
         }
+
+        // Prepare statement with query
+        
+
     }
