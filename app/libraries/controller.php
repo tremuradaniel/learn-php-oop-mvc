@@ -6,7 +6,8 @@
             // Require model file
             require_once '../app/models/' . $model . '.php';
 
-            // instanttiate model
+            // instantiate model
+            echo $model;
             return new $model();
 
         }
