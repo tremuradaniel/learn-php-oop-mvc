@@ -1,5 +1,5 @@
 <?php
-    // Base controller - load model, load view 
+    // Base controller - load model, load view  
     class Controller {
         // Load model
         public function model($model) {
