@@ -58,4 +58,14 @@
                 return true;
             } else return false;
         }
+
+        public function deletePost($id) {
+            $sql = 'DELETE FROM posts WHERE id = :id';
+            $this->db->query($sql);
+            $this->db->bind(':id', $id);
+            // Execute
+            if($this->db->execute()) {
+                return true;
+            } else return false;
+        }
     }

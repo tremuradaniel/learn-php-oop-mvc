@@ -132,4 +132,20 @@
             }
         }
 
+        public function delete(String $id)
+        {
+            if($_SERVER['REQUEST_METHOD'] == 'POST') {
+                // Check for owner
+                if($post->user_id != $_SESSION['user_id']) {
+                    redirect('posts');
+                }
+                if($this->postModel->deletePost($id)) {
+                    flash('post_message', 'Post Removed');
+                    redirect('posts');
+                }
+            } else {
+                die('Something went wrong');
+            }
+        }
+
     }

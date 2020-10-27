@@ -16,7 +16,7 @@
         >Edit</a>
         <form action="<?php echo URLROOT;
         ?>/posts/delete/<?php echo $data['post']->id; ?>" 
-        method="delete" class="float-right">
+            method="POST" class="float-right">
             <input type="submit" value="Delete" class="btn btn-danger">
         </form>
     <?php endif; ?>
