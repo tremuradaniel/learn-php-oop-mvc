@@ -43,4 +43,19 @@
             $row = $this->db->single();
             return $row;
         }
+
+        public function updatePost(Array $data)
+        {
+            $sql = 'UPDATE posts 
+                    SET title = :title, body = :body, id = :id
+                    WHERE id = :id';
+            $this->db->query($sql);
+            $this->db->bind(':title', $data['title']);
+            $this->db->bind(':body', $data['body']);
+            $this->db->bind(':id', $data['id']);
+            // Execute
+            if($this->db->execute()) {
+                return true;
+            } else return false;
+        }
     }

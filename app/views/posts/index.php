@@ -23,7 +23,7 @@
             <p class="card-text">
                 <?php echo $post->body; ?>
             </p>
-            <a href="<?php echo URLROOT;?>posts/show/<?php echo $post->postId?>;"
+            <a href="<?php echo URLROOT;?>posts/show/<?php echo $post->postId; ?>"
                     class="btn btn-dark">More</a>
         </div>
     <?php endforeach; ?>
